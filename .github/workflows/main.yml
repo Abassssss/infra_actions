@@ -63,7 +63,7 @@ jobs:
         # key: ${{ secrets.SSH_KEY }}
         # passphrase: ${{ secrets.PASSPHRASE }}
         host: 51.250.98.12
-        username: abas
+        username: abassss
         key: ${{ secrets.SSH_KEY }}
         passphrase: 1221
         script: |
