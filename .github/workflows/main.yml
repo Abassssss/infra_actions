@@ -58,12 +58,15 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
+        # host: ${{ secrets.HOST }}
+        # username: ${{ secrets.USER }}
+        # key: ${{ secrets.SSH_KEY }}
         # passphrase: ${{ secrets.PASSPHRASE }}
+        host: 51.250.98.12
+        username: abas
+        key: ${{ secrets.SSH_KEY }}
+        passphrase: 1221
         script: |
-          ${{ secrets.PASSPHRASE }}
           # Выполняет pull образа с DockerHub
           sudo docker pull abassss/test
           # Остановка всех контейнеров
